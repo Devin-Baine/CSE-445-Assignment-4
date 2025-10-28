@@ -82,6 +82,9 @@ namespace ConsoleApp1
                 XmlDocument clean = new XmlDocument();
                 XmlNode rootCopy = clean.ImportNode(source.DocumentElement, true);
                 clean.AppendChild(rootCopy);
+				
+				// Remove XML Comments
+				foreach (XmlNode c in clean.SelectNodes("//comment()")) c.ParentNode.RemoveChild(c);
 
                 // Serialize With Root Wrapper
                 string jsonText = JsonConvert.SerializeXmlNode(
