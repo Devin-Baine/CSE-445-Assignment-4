@@ -1,4 +1,4 @@
-﻿# Ignore build and user-specific files
+﻿# Ignore Build and User-Specific Files
 *.sln
 *.user
 *.suo
