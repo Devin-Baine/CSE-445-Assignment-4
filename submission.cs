@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Xml.Schema;
 using System.IO;
@@ -77,9 +77,9 @@ namespace ConsoleApp1
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load(xmlUrl);
 
-                // Serialize XML To JSON
+                // Serialize Root Element To JSON
                 string jsonText = JsonConvert.SerializeXmlNode(
-                    xmlDoc,
+                    xmlDoc.DocumentElement,
                     Newtonsoft.Json.Formatting.Indented,
                     true
                 );
