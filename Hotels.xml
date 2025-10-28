@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="https://devin-baine.github.io/CSE-445-Assignment-4/Hotels.xsd">
 
 	<Hotel Rating="4.2" NearestAirport="Sky Harbor">
-		<Name>Westin</Name>
+		<Name>The Westin Tempe</Name>
 		<Phone>480-968-8885</Phone>
 		<Phone>800-937-8461</Phone>
 		<Address Number="11">
