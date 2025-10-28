@@ -74,14 +74,19 @@ namespace ConsoleApp1
             try
             {
                 // Load XML Document
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load(xmlUrl);
+                XmlDocument source = new XmlDocument();
+                source.Load(xmlUrl);
 
-                // Serialize Root Element To JSON
+                // Build Clean Document Without Declaration
+                XmlDocument clean = new XmlDocument();
+                XmlNode rootCopy = clean.ImportNode(source.DocumentElement, true);
+                clean.AppendChild(rootCopy);
+
+                // Serialize With Root Wrapper
                 string jsonText = JsonConvert.SerializeXmlNode(
-                    xmlDoc.DocumentElement,
+                    clean,
                     Newtonsoft.Json.Formatting.Indented,
-                    true
+                    false
                 );
 
                 // Return JSON Output
