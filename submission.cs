@@ -84,7 +84,11 @@ namespace ConsoleApp1
                 clean.AppendChild(rootCopy);
 
                 // Serialize With Root Wrapper
-                string jsonText = JsonConvert.SerializeXmlNode(clean, Formatting.Indented, false);
+                string jsonText = JsonConvert.SerializeXmlNode(
+                    clean,
+                    Newtonsoft.Json.Formatting.Indented,
+                    false
+                );
 
                 // Return JSON Output
                 return jsonText;
