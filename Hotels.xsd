@@ -3,6 +3,36 @@
 <!-- XSD Schema Definition For Hotels -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+	<!-- Rating Type -->
+	<xs:simpleType name="RatingType">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="5"/>
+			<xs:fractionDigits value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Phone Type -->
+	<xs:simpleType name="PhoneType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{3}-\d{3}-\d{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- State Type -->
+	<xs:simpleType name="StateType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Zip Type -->
+	<xs:simpleType name="ZipType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{5}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<!-- Root Element -->
 	<xs:element name="Hotels">
 		<xs:complexType>
@@ -17,7 +47,7 @@
 							<xs:element name="Name" type="xs:string"/>
 
 							<!-- Phone Element -->
-							<xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
 
 							<!-- Address Element -->
 							<xs:element name="Address">
@@ -31,10 +61,10 @@
 										<xs:element name="City" type="xs:string"/>
 
 										<!-- State Element -->
-										<xs:element name="State" type="xs:string"/>
+										<xs:element name="State" type="StateType"/>
 
 										<!-- Zip Element -->
-										<xs:element name="Zip" type="xs:int"/>
+										<xs:element name="Zip" type="ZipType"/>
 
 									</xs:sequence>
 
@@ -47,7 +77,7 @@
 						</xs:sequence>
 
 						<!-- Rating Attribute -->
-						<xs:attribute name="Rating" type="xs:decimal" use="required"/>
+						<xs:attribute name="Rating" type="RatingType" use="required"/>
 
 						<!-- NearestAirport Attribute -->
 						<xs:attribute name="NearestAirport" type="xs:string" use="optional"/>
