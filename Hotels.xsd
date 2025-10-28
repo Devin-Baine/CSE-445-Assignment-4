@@ -34,7 +34,7 @@
 										<xs:element name="State" type="xs:string"/>
 
 										<!-- Zip Element -->
-										<xs:element name="Zip" type="xs:int"/>
+										<xs:element name="Zip" type="xs:string"/>
 
 									</xs:sequence>
 
