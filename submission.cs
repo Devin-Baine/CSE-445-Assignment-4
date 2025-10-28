@@ -1,7 +1,6 @@
 using System;
 using System.Xml;
 using System.Xml.Schema;
-using System.IO;
 using Newtonsoft.Json;
 
 namespace ConsoleApp1
@@ -42,9 +41,11 @@ namespace ConsoleApp1
                 string errors = string.Empty;
 
                 // Configure Reader Settings
-                XmlReaderSettings settings = new XmlReaderSettings();
-                settings.Schemas = schemas;
-                settings.ValidationType = ValidationType.Schema;
+                XmlReaderSettings settings = new XmlReaderSettings
+                {
+                    Schemas = schemas,
+                    ValidationType = ValidationType.Schema
+                };
 
                 // Assign Validation Handler
                 settings.ValidationEventHandler += (sender, e) =>
@@ -83,11 +84,7 @@ namespace ConsoleApp1
                 clean.AppendChild(rootCopy);
 
                 // Serialize With Root Wrapper
-                string jsonText = JsonConvert.SerializeXmlNode(
-                    clean,
-                    Newtonsoft.Json.Formatting.Indented,
-                    false
-                );
+                string jsonText = JsonConvert.SerializeXmlNode(clean, Formatting.Indented, false);
 
                 // Return JSON Output
                 return jsonText;
