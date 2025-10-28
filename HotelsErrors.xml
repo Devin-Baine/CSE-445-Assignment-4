@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://devin-baine.github.io/CSE-445-Assignment-4/Hotels.xsd">
+
+	<!-- Root Is Wrong -->
+	<Hotel Rating="4.2" NearestAirport="Sky Harbor">
+		<Name>Westin</Name>
+		<Name>Duplicate Name</Name>
+		<Phone>480-968-8885</Phone>
+		<Address Number="11">
+			<Street>E 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Hotel>
+
+	<!-- Missing Required Rating -->
+	<Hotel NearestAirport="LAX">
+		<Name>Hilton Los Angeles Airport</Name>
+		<Phone>310-410-4000</Phone>
+		<Address Number="5711">
+			<Street>W Century Blvd</Street>
+			<City>Los Angeles</City>
+			<State>CA</State>
+			<Zip>90045</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>

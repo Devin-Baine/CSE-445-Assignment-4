@@ -1,0 +1,10 @@
+﻿# Ignore build and user-specific files
+*.sln
+*.user
+*.suo
+*.exe
+*.dll
+*.pdb
+bin/
+obj/
+.vs/
