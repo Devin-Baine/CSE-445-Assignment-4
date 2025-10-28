@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML Instance Document For Hotels -->
 <Hotels
   xmlns="http://venus.sod.asu.edu/WSRepository/xml"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml https://devin-baine.github.io/CSE-445-Assignment-4/Hotels.xsd">
 
+  <!-- Hotel Entry 1 -->
   <Hotel Rating="4.2" NearestAirport="Sky Harbor">
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
@@ -16,6 +19,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 2 -->
   <Hotel Rating="4.0" NearestAirport="LAX">
     <Phone>310-410-4000</Phone>
     <Name>Hilton Los Angeles Airport</Name>
@@ -27,6 +31,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 3 -->
   <Hotel Rating="3.8">
     <Phone>206-213-0100</Phone>
     <Name>Courtyard Seattle Downtown</Name>
@@ -38,6 +43,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 4 -->
   <Hotel Rating="4.5" NearestAirport="ORD">
     <Phone>847-696-1234</Phone>
     <Name>Hyatt Regency O'Hare</Name>
@@ -49,6 +55,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 5 -->
   <Hotel Rating="4.1">
     <Phone>713-654-1777</Phone>
     <Name>Marriott Marquis Houston</Name>
@@ -60,6 +67,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 6 -->
   <Hotel Rating="3.9" NearestAirport="JFK">
     <Phone>718-977-3300</Phone>
     <Name>Fairfield Inn New York JFK Airport</Name>
@@ -71,6 +79,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 7 -->
   <Hotel Rating="4.3">
     <Phone>617-261-8700</Phone>
     <Name>W Boston</Name>
@@ -82,6 +91,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 8 -->
   <Hotel Rating="3.7">
     <Phone>303-296-0400</Phone>
     <Name>Holiday Inn Express Denver</Name>
@@ -93,6 +103,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 9 -->
   <Hotel Rating="4.0" NearestAirport="SFO">
     <Phone>415-394-1111</Phone>
     <Name>Hotel Nikko San Francisco</Name>
@@ -104,6 +115,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 10 -->
   <Hotel Rating="4.6">
     <Phone>407-597-5500</Phone>
     <Name>Waldorf Astoria Orlando</Name>
@@ -115,6 +127,7 @@
     </Address>
   </Hotel>
 
+  <!-- Hotel Entry 11 -->
   <Hotel Rating="4.4" NearestAirport="SAN">
     <Phone>619-231-6664</Phone>
     <Name>Omni San Diego Hotel</Name>
