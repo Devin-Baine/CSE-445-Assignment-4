@@ -2,115 +2,126 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://devin-baine.github.io/CSE-445-Assignment-4/Hotels.xsd">
 
-	<Hotel Rating="4.2" NearestAirport="Sky Harbor">
-		<Name>Westin</Name>
-		<Phone>480-968-8885</Phone>
-		<Phone>800-937-8461</Phone>
-		<Address Number="11">
-			<Street>E 7th St</Street>
-			<City>Tempe</City>
-			<State>AZ</State>
-			<Zip>85281</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.2" NearestAirport="Sky Harbor">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address Number="11">
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="4.0" NearestAirport="LAX">
-		<Name>Hilton Los Angeles Airport</Name>
-		<Phone>310-410-4000</Phone>
-		<Address Number="5711">
-			<Street>W Century Blvd</Street>
-			<City>Los Angeles</City>
-			<State>CA</State>
-			<Zip>90045</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.0" NearestAirport="LAX">
+    <Name>Hilton Los Angeles Airport</Name>
+    <Phone>310-410-4000</Phone>
+    <Address Number="5711">
+      <Street>W Century Blvd</Street>
+      <City>Los Angeles</City>
+      <State>CA</State>
+      <Zip>90045</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="3.8">
-		<Name>Courtyard Seattle Downtown</Name>
-		<Phone>206-213-0100</Phone>
-		<Address Number="612">
-			<Street>4th Ave</Street>
-			<City>Seattle</City>
-			<State>WA</State>
-			<Zip>98104</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="3.8">
+    <Name>Courtyard Seattle Downtown</Name>
+    <Phone>206-213-0100</Phone>
+    <Address Number="612">
+      <Street>4th Ave</Street>
+      <City>Seattle</City>
+      <State>WA</State>
+      <Zip>98104</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="4.5" NearestAirport="ORD">
-		<Name>Hyatt Regency O'Hare</Name>
-		<Phone>847-696-1234</Phone>
-		<Address Number="9300">
-			<Street>Bryn Mawr Ave</Street>
-			<City>Rosemont</City>
-			<State>IL</State>
-			<Zip>60018</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.5" NearestAirport="ORD">
+    <Name>Hyatt Regency O'Hare</Name>
+    <Phone>847-696-1234</Phone>
+    <Address Number="9300">
+      <Street>Bryn Mawr Ave</Street>
+      <City>Rosemont</City>
+      <State>IL</State>
+      <Zip>60018</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="4.1">
-		<Name>Marriott Marquis Houston</Name>
-		<Phone>713-654-1777</Phone>
-		<Address Number="1777">
-			<Street>Walker St</Street>
-			<City>Houston</City>
-			<State>TX</State>
-			<Zip>77010</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.1">
+    <Name>Marriott Marquis Houston</Name>
+    <Phone>713-654-1777</Phone>
+    <Address Number="1777">
+      <Street>Walker St</Street>
+      <City>Houston</City>
+      <State>TX</State>
+      <Zip>77010</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="3.9" NearestAirport="JFK">
-		<Name>Fairfield Inn New York JFK Airport</Name>
-		<Phone>718-977-3300</Phone>
-		<Address Number="15608">
-			<Street>Rockaway Blvd</Street>
-			<City>Jamaica</City>
-			<State>NY</State>
-			<Zip>11434</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="3.9" NearestAirport="JFK">
+    <Name>Fairfield Inn New York JFK Airport</Name>
+    <Phone>718-977-3300</Phone>
+    <Address Number="15608">
+      <Street>Rockaway Blvd</Street>
+      <City>Jamaica</City>
+      <State>NY</State>
+      <Zip>11434</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="4.3">
-		<Name>W Boston</Name>
-		<Phone>617-261-8700</Phone>
-		<Address Number="100">
-			<Street>Stuart St</Street>
-			<City>Boston</City>
-			<State>MA</State>
-			<Zip>02116</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.3">
+    <Name>W Boston</Name>
+    <Phone>617-261-8700</Phone>
+    <Address Number="100">
+      <Street>Stuart St</Street>
+      <City>Boston</City>
+      <State>MA</State>
+      <Zip>02116</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="3.7">
-		<Name>Holiday Inn Express Denver</Name>
-		<Phone>303-296-0400</Phone>
-		<Address Number="401">
-			<Street>17th St</Street>
-			<City>Denver</City>
-			<State>CO</State>
-			<Zip>80202</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="3.7">
+    <Name>Holiday Inn Express Denver</Name>
+    <Phone>303-296-0400</Phone>
+    <Address Number="401">
+      <Street>17th St</Street>
+      <City>Denver</City>
+      <State>CO</State>
+      <Zip>80202</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="4.0" NearestAirport="SFO">
-		<Name>Hotel Nikko San Francisco</Name>
-		<Phone>415-394-1111</Phone>
-		<Address Number="222">
-			<Street>Mason St</Street>
-			<City>San Francisco</City>
-			<State>CA</State>
-			<Zip>94102</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.0" NearestAirport="SFO">
+    <Name>Hotel Nikko San Francisco</Name>
+    <Phone>415-394-1111</Phone>
+    <Address Number="222">
+      <Street>Mason St</Street>
+      <City>San Francisco</City>
+      <State>CA</State>
+      <Zip>94102</Zip>
+    </Address>
+  </Hotel>
 
-	<Hotel Rating="4.6">
-		<Name>Waldorf Astoria Orlando</Name>
-		<Phone>407-597-5500</Phone>
-		<Address Number="14200">
-			<Street>Bonnet Creek Resort Ln</Street>
-			<City>Orlando</City>
-			<State>FL</State>
-			<Zip>32821</Zip>
-		</Address>
-	</Hotel>
+  <Hotel Rating="4.6">
+    <Name>Waldorf Astoria Orlando</Name>
+    <Phone>407-597-5500</Phone>
+    <Address Number="14200">
+      <Street>Bonnet Creek Resort Ln</Street>
+      <City>Orlando</City>
+      <State>FL</State>
+      <Zip>32821</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.4" NearestAirport="SAN">
+    <Name>Omni San Diego Hotel</Name>
+    <Phone>619-231-6664</Phone>
+    <Address Number="675">
+      <Street>L St</Street>
+      <City>San Diego</City>
+      <State>CA</State>
+      <Zip>92101</Zip>
+    </Address>
+  </Hotel>
 
 </Hotels>
