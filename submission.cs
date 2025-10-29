@@ -17,7 +17,7 @@ namespace ConsoleApp1
         {
             // Validate Standard XML
             string result = Verification(xmlURL, xsdURL);
-            Console.WriteLine(result);
+            Console.WriteLine(result == "No Error" ? "No errors are found." : result);
 
             // Validate Error XML
             result = Verification(xmlErrorURL, xsdURL);
